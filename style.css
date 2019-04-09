@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+ }
+ 
+ body{
+    /* with margin 0 auto the space around the webside will be disapeared and page shows fix as full page */
+    margin: 0 auto;
+    background-color: rgb(255, 255, 193);
+    color: rgb(40, 139, 185);
+ }
+ 
+ .header{
+    padding: 30px;
+    text-align: center;
+    color: white;
+    
+    
+ }
+
+
+ .headerimg{
+    width: 100%;
+   background-image: url(camels.jpg);
+   background-size: 100%;
+   background-repeat: no-repeat;
+  
+ }
+ 
+ .nav{
+    background-color: #c5c20d9f;
+    display: flex;
+    justify-content: center;
+ /* desplay: flex; and justify-content: center dont work  without display flex.*/
+ 
+ }
+ 
+ .nav a{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 14px;
+    border-left: .5px solid white;
+ }
+ 
+ .nav a:hover{
+    /* I need to make my nave in the center and responsive(flixable) */
+    background-color: gold;
+    color: white;
+    font-size: 35px;
+ 
+ }
+ 
+ /* images from 1 to 6 inside the main and the aside  */
+ 
+ .img1{
+ 
+ width: 100%;
+ padding: 20px;
+ background-image: url(desert.jpg);
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ 
+ }
+ 
+ 
+ 
+ .img2{
+ 
+    width: 100%;
+    padding: 20px;
+    background-image: url(mount_everest_650.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+   }
+ 
+ 
+ .img3{
+ 
+    width: 100%;
+    padding: 20px;
+    background-image: url(space.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+   }
+ 
+ 
+ .img4{
+ 
+    width: 100%;
+    padding: 20px;
+    background-image: url(earth.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+   }
+ 
+ 
+   .img5{
+ 
+    width: 100%;
+    padding: 20px;
+    background-image: url(sea.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+   }
+ 
+ 
+   .img6{
+ 
+    width: 100%;
+    padding: 20px;
+    background-image: url(forest.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-self: stretch;
+   }
+ 
+ 
+ 
+   /* ------------------------------------------------- */
+ 
+ .aside{
+   
+    flex: 30%;
+    height: 80%;
+    text-align: center;
+    padding: 10px;
+ 
+ }
+ 
+ .main{
+    flex: 70%;
+    padding: 20px;
+ }
+ 
+ 
+  /* The row is the option whith wich we are chosing the place of our aside and main parts of our page. flex-directin: row-reverse side to side and column brings all our aside and main items horizontal up to down */
+ 
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+     flex-direction: row-reverse;
+ }
+ 
+ .footer {
+   
+    padding-bottom: 5px;
+    text-align: center;
+    color: white;
+    background-color: #c5c20d9f;
+ }
+
+ .footer h3{
+padding: 10px;
+ }
+
+ 
+ @media screen and (max-width:700px){
+ 
+.headerimg{
+   height: 50px;
+}
+
+
+    .row,.nav{
+    flex-direction: column;
+    text-align: center;
+ 
+   }
+
+   .footer{
+      font-size: 10px;
+   }
+}
